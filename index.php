@@ -5,7 +5,7 @@
 foreach ($_SERVER as $header => $value) {
   if (substr($header, 0, 5) == 'HTTP_') {
     $clean_header = substr($header, 5, strlen($header));
-    echo $clean_header .': '. $value .'<br />';
+    echo '<strong>'. $clean_header .'</strong>: '. $value .'<br />';
   }
 }
 ?>
